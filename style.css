@@ -75,7 +75,7 @@ header span {
 .about-section .wrapper {
     display: flex;
     flex-direction: column;
-    row-gap: 60px;
+    gap: 60px;
 
     /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
@@ -123,7 +123,7 @@ select:hover,
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 16px;
+    gap: 16px;
     /* 📍 Свойства flexbox для отступов между элементами в списках */
 }
 
@@ -137,9 +137,9 @@ select:hover,
 
 .skills-block {
     display: flex;
-    flex-direction: column;
-    .text-field {order: 1}
-    .skills {order: 2}
+    flex-direction: column-reverse;
+    .text-field {order: -1}
+    .skills {order: 0}
     /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
 }
 
